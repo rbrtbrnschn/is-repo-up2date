@@ -1,6 +1,9 @@
 #!/bin/bash
-REMOTE="master" # git standard is 'origin'
 
+# git standard is 'origin'
+REMOTE="master" 
+
+# exit codes
 REPO_UP_TO_DATE=200
 REPO_NEEDS_UPDATE=201
 REPO_UPDATED=202
@@ -43,6 +46,7 @@ REMOTE_COMMIT_ID=$(git ls-remote $REMOTE_URI HEAD)
 REMOTE_COMMIT_ID=( $REMOTE_COMMIT_ID )
 REMOTE_COMMIT_ID="${REMOTE_COMMIT_ID[0]}"
 
+# Checks if updated
 if [ "$LOCAL_COMMIT_ID" == "$REMOTE_COMMIT_ID" ]; then
 	exit $REPO_UP_TO_DATE
 else
