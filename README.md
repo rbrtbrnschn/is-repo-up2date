@@ -2,20 +2,13 @@
 Bash script checking if current github repository is up to date.
 
 ## Usage
-*This script uses status codes for verification*
+*This script prompts the user to update in case - exits with status code 0 if no update is needed.*
 
 
 For example:
 ```bash
-up2date.sh
-STATUS_CODE="$?"
-
-if [ "$STATUS_CODE" -eq 0 ]; then
-	: # is up to date, do nothing
-else
-	: # not up to date, do somehting (ie. update, pull, fetch)
-fi
-
+./up2date.sh
+<YOUR SCRIPT BELOW>
 ```
 
 <hr/> 
