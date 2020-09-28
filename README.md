@@ -1,4 +1,4 @@
-# Is Repo Up2Date
+# Is Repo Up2Date | Aurora
 Bash script checking if current github repository is up to date.
 
 ## Usage
