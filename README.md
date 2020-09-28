@@ -4,6 +4,7 @@ Bash script checking if current github repository is up to date.
 ## Usage
 *This script uses status codes for verification*
 
+
 For example:
 ```bash
 up2date.sh
